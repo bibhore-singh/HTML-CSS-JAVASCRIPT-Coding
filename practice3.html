@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid area</title>
+    <style>
+        .grid_container {
+            display: grid;
+            grid-template-areas: "header header header" "Navigation Navigation Navigation" "Left Main Right" "footer footer footer";
+            border: 2px solid black;
+            grid-template-rows: 150px 150px 150px 150px;
+        }
+
+        .items {
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        #first1 {
+            grid-area: header;
+            color: rgb(36, 4, 244);
+            background-image: url(LPU.png);
+            padding: 50px;
+        }
+
+        #first2 {
+            background-color: rgb(212, 239, 6);
+            grid-area: Navigation;
+            color: rgb(8, 24, 246);
+            padding: 50px;
+        }
+
+        #first3 {
+            background-color: rgb(248, 7, 244);
+            grid-area: Left;
+            color: rgb(8, 24, 246);
+            padding: 50px;
+        }
+
+        #first4 {
+            background-color: rgb(244, 5, 5);
+            grid-area: Main;
+            color: rgb(8, 24, 246);
+            padding: 50px;
+        }
+
+        #first5 {
+            background-color: rgb(6, 239, 25);
+            grid-area: Right;
+            color: rgb(8, 24, 246);
+            padding: 50px;
+        }
+
+        #first6 {
+            background-color: rgb(253, 101, 0);
+            grid-area: footer;
+            color: rgb(8, 24, 246);
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid_container">
+        <div class="items" id="first1">Header</div>
+        <div class="items" id="first2">Navigation</div>
+        <div class="items" id="first3">Left</div>
+        <div class="items" id="first4">Main</div>
+        <div class="items" id="first5">Right</div>
+        <div class="items" id="first6">Footer</div>
+</body>
+
+</html>
