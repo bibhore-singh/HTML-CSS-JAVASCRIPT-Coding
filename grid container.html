@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .grid_container {
+            display: grid;
+            background-color: rgb(28, 167, 213);
+            padding: 30px;
+            /* grid-template-columns: 100px auto auto;
+            grid-template-rows: 200px;
+            grid-auto-rows: 350px; */
+            /* grid-auto-rows --> this is for the remaining rows only */
+            
+            grid-gap: 200px 250px;
+        }
+
+        .items {
+            background-color: crimson;
+            border: 2px solid pink;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #first1 {
+            /* grid-row-start: 1;
+            grid-row-end: span 2; */
+            grid-row: 1/span 2;
+        }
+
+        #first4 {
+            grid-column-start: 2;
+            grid-column-end: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid_container">
+        <div class="items" id="first1">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items" id="first4">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+        <div class="items">10</div>
+        <div class="items">11</div>
+    </div>
+</body>
+
+</html>
