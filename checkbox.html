@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+    <style>
+        body {
+            background-color: lightyellow;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <!-- legend - used for creating outline. -->
+            <legend>This is my HTML File</legend>
+            <!-- Text -->
+            <label for="Firstname">Enter Firstname:</label>
+            <input type="text" name="Firstname"><br>
+            <label for="username">Enter Username:</label>
+            <input type="text" name="username"><br>
+            <label for="password">Enter Password:</label>
+            <input type="password" name="password">
+            <input type="submit" value="submit"><br><br>
+            <!-- Checkbox -->
+            <label for="Select your Hobbies">Choose your Hobbies</label><br>
+            <input type="Checkbox" id="hobby1" name="favourite_hobbies" value="Singing">
+            <label for="hobby1">Singing</label><br>
+            <input type="Checkbox" id="hobby2" name="favourite_hobbies" value="Dancing">
+            <label for="hobby2">Dancing</label><br>
+            <input type="Checkbox" id="hobby3" name="favourite_hobbies" value="Music">
+            <label for="hobby3">Music</label><br>
+            <input type="Checkbox" id="hobby4" name="favourite_hobbies" value="Travelling">
+            <label for="hobby4">Travelling</label><br>
+            <input type="submit" value="submit"><br><br>
+            <!-- Radio -->
+            <label for="Select your fav_language">Choose your fav_language</label><br>
+            <input type="radio" id="language1" name="fav_language" value="C">
+            <label for="language1">C</label> <br>
+            <input type="radio" id="language2" name="fav_language" value="C++">
+            <label for="language2">C++</label> <br>
+            <input type="radio" id="language3" name="fav_language" value="JAVA">
+            <label for="language3">JAVA</label><br>
+            <input type="radio" id="language4" name="fav_language" value="PYTHON">
+            <label for="language4">PYTHON</label><br>
+            <input type="submit" value="submit"><br><br>
+            <!-- Drop down menu -->
+            <label for="Select your branch"> Select your branch</label><br>
+            <select id="BRANCH">
+                <option value="SELECT YOUR BRANCH">SELECT YOUR BRANCH</option>
+                <option value="CSE">CSE</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="EEE">EEE</option>
+                <option value="ME">ME</option>
+                <option value="ECE">ECE</option>
+            </select><br><br>
+            
+            <!-- Choose a File -->
+             <input type="file" name="resume" accept=".pdf"> 
+            <input type="submit" value="submit"><br><br>
+        </fieldset>
+    </form>
+</body>
+
+</html>
