@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS (If Else)</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="comparison"></p>
+    <p id="comparison4"></p>
+<p id="switch"></p>
+    <script>
+        var age = 16;
+        if (age > 18) {
+            document.getElementById("demo").innerHTML = "you can drive"
+        } else {
+            document.getElementById("demo").innerHTML = "you can not drive"
+        }
+
+        // If else(doing comparison)
+        var person1 = 25;
+        var person2 = 19;
+        var person3 = 22;
+        var result = "Person3 is elder";
+        if (person1 > person2 && person1 > person3) {
+            result = "Person1 is elder"
+        }
+        else if (person2 > person1 && person2 > person3) {
+            result = "Person2 is elder"
+        }
+        document.getElementById("comparison").innerHTML = result;
+
+        var a = 37;
+        var b = 66;
+        var c = 13;
+        var d = 22;
+        var Result = "d is greater"
+        if (a > b && a > c && a > d) {
+            Result = "a is greater"
+        }
+        else if (b > a && b > c && b > d) {
+            Result = "b is greater"
+        }
+        else if (c > a && c > b && c > d) {
+            Result = "c is greater"
+        }
+        document.getElementById("comparison4").innerHTML = Result;
+
+        // switch(break)
+        var day = 7;
+        var dayname;
+        switch (day) {
+            case 1:
+                dayname = "Monday";
+                break;
+            case 2:
+                dayname = "Tuesday";
+                break;
+            case 3:
+                dayname = "Wednesday";
+                break;
+            case 4:
+                dayname = "Thursday";
+                break;
+            case 5:
+                dayname = "Friday";
+                break;
+            case 6:
+                dayname = "Saturday";
+                break;
+            case 7:
+                dayname = "Sunday";
+                break;
+            default:
+                dayname="Invalid day numbers";
+        }
+        document.getElementById("switch").innerHTML=dayname;
+    </script>
+</body>
+
+</html>
