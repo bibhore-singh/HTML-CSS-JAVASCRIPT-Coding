@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background images</title>
+    <style>
+        div {
+            height: 400px;
+            width: 800px;
+            border: 2px solid rgb(133, 9, 9);
+            margin: 20px auto;
+        }
+
+        .box1 {
+            background-image: url(LPU.png), linear-gradient(to left, red, green, blue);
+            background-size: cover;
+            background-attachment: scroll;
+            background-blend-mode: multiply;
+        }
+
+        .box2 {
+            background-image: url(car.png), linear-gradient(to top, yellow, cyan, lime);
+            background-size: contain;
+            background-attachment: fixed;
+            background-blend-mode: multiply;
+
+        }
+
+        .box3 {
+            background-image: url(car.png), linear-gradient(to bottom left, pink, orange, purple);
+            background-attachment: scroll;
+            background-blend-mode: multiply;
+        }
+
+        .box4 {
+            height: 1500px;
+            width: 2000px;
+            background-image: url(bullet.png);
+            background-repeat: repeat;
+        }
+
+        .box5 {
+            border-top-width: 20px;
+            border-top-style: outset;
+            border-top-color: blue;
+             border-bottom-width: 20px;
+            border-bottom-style: inset;
+            border-bottom-color: rgb(219, 237, 22);
+             border-left-width: 20px;
+            border-left-style: dashed;
+            border-left-color: rgb(140, 13, 231);
+             border-right-width: 20px;
+            border-right-style: solid;
+            border-right-color: rgb(230, 91, 11);
+            padding-top: 250px;
+            padding-right: 50px;
+            padding-bottom: 250px;
+            padding-left: 50px;
+            text-transform: capitalize;
+            text-align: center;
+            color: rgb(227, 11, 11);
+            background-color: rgb(3, 246, 218);
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background-image : url() -->
+    <!-- Background-size : cover/contain-->
+    <!-- Background-Attachement : fixed/scroll -->
+    <!-- Background-Repeat -->
+    <div class="box1">
+        This is to show the background images.
+    </div>
+    <div class="box2">
+        This is to show the background images.
+    </div>
+    <div class="box3">
+        This is to show the background images.
+    </div>
+    <!-- Background-repeat : it has 4 types -->
+    <!-- background-repeat -->
+    <!-- Background-no-repeat -->
+    <!-- Background-repeat-x -->
+    <!-- Background-repeat-y -->
+    <div class="box4">
+        This is to show the background images.
+    </div>
+    <div class="box5">
+This is to show the border.
+    </div>
+    <!-- grid-template-columns: value value value -->
+     <!--  grid-template-rows: value value value -->
+       <!-- OR -->
+        <!--  grid-template: value value value/value value value;  -->
+</body>
+
+</html>
